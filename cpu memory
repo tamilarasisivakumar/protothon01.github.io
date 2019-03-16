@@ -1,0 +1,4 @@
+import time
+while True:
+    print("tamil")
+    time.sleep(10)
