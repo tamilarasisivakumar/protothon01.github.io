@@ -1,0 +1,43 @@
+int main()
+{
+    char o;
+    float a,b,c;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &o);
+
+    printf("Enter two operands: ");
+    scanf("%f %f",&a, &b);
+
+    switch(o)
+    {
+        case '+':
+            c=a+b;
+            printf("addition is %f",a+b);
+            break;
+
+        case '-':
+           if(a==0||b==0)
+            printf("invalid");
+            return 0;
+             c=a-b;
+             printf("subtraction is %f", a-b);
+             break;
+             
+        case '*':
+            c=a+b;
+            printf("addition is %f",a*b);
+            break;
+            
+        case '/':
+            c=a+b;
+            printf("addition is %f",a/b);
+            break;
+        default:
+            printf("Error! operator is not correct");
+    }
+
+    return 0;
+
+    
+}
