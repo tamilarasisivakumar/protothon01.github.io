@@ -1,0 +1,18 @@
+import math
+a=[]
+sq=[]
+a=input("enter the number :").split(',')
+a=[float(i) for i in a]
+print(a)
+n=len(a)
+print(n)
+
+sq=[i*i for i in a]
+print(sq)
+sum=0
+for i in sq:
+    sum+=i
+print(sum)
+mean=sum/n
+print(mean)
+print(math.sqrt(mean))
